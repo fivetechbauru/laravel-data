@@ -27,9 +27,11 @@ class CastPropertiesDataPipe implements DataPipe
                 continue;
             }
 
+            /*
             if ($value === null || $value instanceof Optional || $value instanceof Lazy) {
                 continue;
             }
+            */
 
             $properties[$name] = $this->cast($dataProperty, $value, $castContext);
         }
